@@ -1,0 +1,45 @@
+{
+  "content": [
+      "article", 
+      [
+          "p", 
+          "The second article which is posted by BiSheng."
+      ], 
+      [
+          "hr"
+      ], 
+      [
+          "p", 
+          "Good bye!"
+      ]
+  ], 
+  "meta": {
+      "title": "Good bye!", 
+      "publishDate": "Tue May 05 2015 08:00:00 GMT+0800 (CST)", 
+      "filename": "posts/good-bye.md"
+  }
+},
+
+
+{
+    "content": [
+        "article", 
+        { }, 
+        [
+            "p", 
+            "Good bye!"
+        ]
+    ], 
+    "meta": {
+        "title": "Good bye!", 
+        "publishDate": "Tue May 05 2015 08:00:00 GMT+0800 (CST)", 
+        "filename": "posts/good-bye.md"
+    }, 
+    "description": [
+        "section", 
+        [
+            "p", 
+            "The second article which is posted by BiSheng."
+        ]
+    ]
+}
