@@ -9,14 +9,11 @@ module.exports = {
   ],
   htmlTemplate: path.join(__dirname, './index.html'),
   webpackConfig(config) {
-    // console.log(config.plugins);
-    // config.plugins.push(new webpack.ProvidePlugin({
-    //   React: 'React', react: 'React', 'window.react': 'React', 'window.React': 'React'
-    // }));
-    // config.externals = {
-    //   react: 'window.React',
-    //   'react-dom': 'window.ReactDOM'
-    // };
+    config.resolve.alias = {
+      'react': path.join(__dirname, 'node_modules', 'react'),
+      'react-dom': path.join(__dirname, 'node_modules', 'react-dom')
+    };
+    
     return config;
   },
   pick: {
