@@ -1,8 +1,6 @@
 ---
 title: Input
 publishDate: 2016-05-05
-name: 输入行
-parent_id: 0
 ---
 
 input 控件，支持多种类型
