@@ -20,15 +20,5 @@ module.exports = {
     component: './template/TagCloud',
     dataPath: '/'
   }],
-  footer: 'footer',
-  categorys: [
-    {
-      name: 'base',
-      id: 0
-    },
-    {
-      name: 'Business',
-      id: 1
-    }
-  ]
+  footer: 'footer'
 };

@@ -1,10 +1,14 @@
 import React from 'react';
-import DocumentTitle from 'react-document-title';
-import Layout from './Layout';
+import Header from '../../components/Header';
+import Body from '../../components/Body';
+import Footer from '../../components/Footer';
 
-export default props =>
-  <DocumentTitle title="Not Found | BiSheng Theme One">
-    <Layout {...props}>
-      <h1 className="entry-title">404 Not Found!</h1>
-    </Layout>
-  </DocumentTitle>;
+export default () =>
+  <div>
+    <Header />
+    <Body>
+      <h1>Not Fount, 404!</h1>
+    </Body>
+    <Footer />
+  </div>;
+

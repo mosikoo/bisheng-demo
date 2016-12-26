@@ -33,6 +33,7 @@
     "bisheng": "^0.18.0",
     "bisheng-plugin-description": "^0.1.0",
     "bisheng-plugin-react": "^0.3.1",
+    "bisheng-plugin-toc": "^0.4.0",
     "bluebird": "^3.4.1",
     "react": "^0.14.8",
     "react-document-title": "^2.0.1",

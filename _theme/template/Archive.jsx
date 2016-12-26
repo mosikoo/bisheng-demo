@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
 import DocumentTitle from 'react-document-title';
-import Layout from './Layout';
 
 function getTime(date) {
   return (new Date(date)).getTime();
@@ -33,19 +32,14 @@ export default (props) => {
         </h2>
         {
           !description ? null :
-            <div className="item-description">
-              { toReactComponent(description) }
-            </div>
+          <div className="item-description">
+            { toReactComponent(description) }
+          </div>
         }
       </div>
     );
-  })
+  });
   return (
-      <Layout {...props}>
-        <h1 className="entry-title">Archive</h1>
-        <div className="entry-list">
-          {entryList}
-        </div>
-      </Layout>
+    <div>1</div>
   );
-}
+};
