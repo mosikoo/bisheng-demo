@@ -6,7 +6,8 @@ module.exports = {
   plugins: [
     'bisheng-plugin-description',
     'bisheng-plugin-toc',
-    'bisheng-plugin-react?lang=jsx'
+    'bisheng-plugin-react?lang=jsx',
+    './plugins/bisheng-plugin-copyjsx'
   ],
   htmlTemplate: path.join(__dirname, './index.html'),
   webpackConfig(config) {
@@ -22,7 +23,6 @@ module.exports = {
   },
   pick: {
     posts(markdownData) {
-      console.log(markdownData);
       return {
         meta: markdownData.meta,
         description: '11'

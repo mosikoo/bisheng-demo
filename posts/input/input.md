@@ -30,12 +30,3 @@ ReactDOM.render(
   </div>
   , mountNode);
 ```
-
-```javascript
-import Test from '../mock'
-ReactDOM.render(
-  <div>
-    <Test />
-  </div>
-  , mountNode);
-```

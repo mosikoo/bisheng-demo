@@ -3,9 +3,10 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Body from '../../components/Body';
 import Document from '../../components/Document';
+import { isObject } from '../../components/utils';
 
 export function collect(nextProps, callback) {
-  if (Object.prototype.toString.apply(nextProps.pageData) === '[object Object]') {
+  if (isObject(nextProps.pageData)) {
     const pageData = {};
     const len = Object.keys(nextProps.pageData).length;
     Object.keys(nextProps.pageData).forEach(key =>

@@ -16,8 +16,3 @@ Hello world!
 import Button from '@ali/cg-react/dist/Button'
 ReactDOM.render(<Button onClick={() => alert(1)}>Click!</Button>, mountNode);
 ```
-
-```js
-import Button from '@ali/cg-react/dist/Button'
-ReactDOM.render(<Button onClick={() => alert(1)}>Click!</Button>, mountNode);
-```

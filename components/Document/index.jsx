@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { isArray, isObject } from '../utils';
 
 export default class Document extends React.Component {
   render() {
     const { pageData, utils } = this.props;
-
+console.log(this.props);
     return (
       <div>
         {
@@ -19,7 +20,6 @@ export default class Document extends React.Component {
                   <div className="entry-description">{utils.toReactComponent(description)}</div>
                 }
                 <div className="entry-content">{utils.toReactComponent(content)}</div>
-
                 <div className="entry-meta">
                   <time className="updated">
                     {`${meta.publishDate.slice(0, 10)} `}
