@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { isArray, isObject } from '../utils';
+import Demo from './Demo';
+require('./syntax.css');
 
 export default class Document extends React.Component {
   render() {
@@ -14,35 +15,7 @@ console.log(this.props);
 
             return (
               <div className="hentry" key={`module${index}`}>
-                <h1 className="entry-title">{meta.title}</h1>
-                {
-                  !description ? null :
-                  <div className="entry-description">{utils.toReactComponent(description)}</div>
-                }
-                <div className="entry-content">{utils.toReactComponent(content)}</div>
-                <div className="entry-meta">
-                  <time className="updated">
-                    {`${meta.publishDate.slice(0, 10)} `}
-                  </time>
-                  {
-                    !meta.tags ? null :
-                    <span>
-                      in <span className="entry-tags">
-                        {
-                          meta.tags.map((tag, index) =>
-                            <Link to={`/tags#${tag}`} key={index}>{tag}</Link>
-                          )
-                        }
-                      </span>
-                    </span>
-                  }
-                  {
-                    !meta.source ? null :
-                    <a className="source sep" href={meta.source}>
-                      {meta.source}
-                    </a>
-                  }
-                </div>
+                <Demo {...pageData[key]} utils={utils} />
               </div>
             );
           })

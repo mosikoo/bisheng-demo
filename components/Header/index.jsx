@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import config from '../../_theme';
 
+require('./Header.less');
+
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -10,6 +12,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <div className="header">
+        <i className="logo" />
         <div className="container">
           <div className="brand">
             <Link className="home" to={config.home}>{config.sitename}</Link>

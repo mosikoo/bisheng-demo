@@ -10,29 +10,35 @@ function isObject(obj) {
 }
 
 function copyjsx(node) {
-  if (!JsonML.isElement(node)) return;
+  if (!JsonML.isElement(node)) return null;
 
-  const indexArr = [];
-  const bak = [];
-  node.forEach((item, index) => {
+  let bak;
+  node.some((item) => {
     if (JsonML.isElement(item) && JsonML.getTagName(item) === 'pre' && isObject(item[1]) && item[1].lang === 'jsx') {
-      indexArr.push(index);
-      bak.push(item.slice());
+      bak = item.slice();
+      return true;
     }
+    return false;
   });
 
-  indexArr.forEach((item, index) => {
-    const bakJs = assign({}, bak[index][1]);
-    bakJs.lang = 'javascript';
-    bak[index][1] = bakJs;
-    node.splice(item + 1 + index, 0, bak[index]);
-  });
+  if (!bak) return null;
+
+  bak[1] = assign({}, bak[1]);
+  bak[1].lang = 'javascript';
+
+  return bak;
+  // indexArr.forEach((item, index) => {
+  //   const bakJs = assign({}, bak[index][1]);
+  //   bakJs.lang = 'javascript';
+  //   bak[index][1] = bakJs;
+  //   node.splice(item + 1 + index, 0, bak[index]);
+  // });
 }
 
 module.exports = (markdownData) => {
   const content = markdownData.content || [];
 
-  copyjsx(content);
+  markdownData.jscode = copyjsx(content);
 
   return markdownData;
 };
