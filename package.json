@@ -4,7 +4,7 @@
   "description": "the description of cg-react",
   "main": "index.js",
   "scripts": {
-    "start": "bisheng start",
+    "start": "cross-env NODE_ENV=develop bisheng start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf ./_site/ && bisheng build"
   },
@@ -26,7 +26,8 @@
     "babel-eslint": "^7.1.1",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-0": "^6.16.0"
+    "babel-preset-stage-0": "^6.16.0",
+    "cross-env": "^3.1.3"
   },
   "dependencies": {
     "@ali/cg-react": "^0.6.1",

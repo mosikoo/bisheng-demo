@@ -27,12 +27,6 @@ function copyjsx(node) {
   bak[1].lang = 'javascript';
 
   return bak;
-  // indexArr.forEach((item, index) => {
-  //   const bakJs = assign({}, bak[index][1]);
-  //   bakJs.lang = 'javascript';
-  //   bak[index][1] = bakJs;
-  //   node.splice(item + 1 + index, 0, bak[index]);
-  // });
 }
 
 module.exports = (markdownData) => {

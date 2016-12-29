@@ -1,8 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
 
-require('./Demo.less');
-
 export default class Demo extends React.Component {
   constructor(props) {
     super(props);
@@ -27,7 +25,6 @@ export default class Demo extends React.Component {
     const codeDescriptionClass = classnames('code-description', { extend: visible });
     const specificCodeStyle = visible ? { height: this.height } : { height: '0px' };
 
-    console.log(this.props, 'demo');
     return (
       <div className="code-boxes">
         <section className="code-box">

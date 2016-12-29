@@ -16,8 +16,10 @@ module.exports = {
       'react-dom': path.join(__dirname, 'node_modules', 'react-dom')
     };
 
-    // todo:debug模式
-    config.devtool = 'eval-source-map';
+    if (process.env.NODE_ENV === 'develop') {
+      // debug模式
+      config.devtool = 'eval-source-map';
+    }
 
     return config;
   },

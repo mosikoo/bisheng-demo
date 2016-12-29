@@ -1,5 +1,6 @@
 import React from 'react';
-import config from '../../_theme';
+
+require('./Footer.less');
 
 export default class Footer extends React.Component {
   constructor(props) {
@@ -9,11 +10,7 @@ export default class Footer extends React.Component {
   render() {
     return (
       <div className="footer">
-        {config.footer ? config.footer : null}
-        {
-          config.hideBisheng ? null :
-          <p className="copyright">powered by <a href="https://github.com/benjycui/bisheng">BiSheng</a></p>
-        }
+        <span>© 2016. Design by CG-Team</span>
       </div>
     );
   }

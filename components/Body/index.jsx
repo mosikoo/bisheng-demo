@@ -11,7 +11,7 @@ export default class Body extends React.Component {
   render() {
     const { route } = this.props;
     return (
-      <div className="document">
+      <div className="layout">
         <Aside route={route} />
         <div className="componentContent">
           {this.props.children}

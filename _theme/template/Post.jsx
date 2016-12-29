@@ -5,17 +5,26 @@ import Body from '../../components/Body';
 import Document from '../../components/Document';
 import { isObject } from '../../components/utils';
 
+require('../static/base.less');
+
 export function collect(nextProps, callback) {
   if (isObject(nextProps.pageData)) {
     const pageData = {};
+    const descData = {};
+
     const len = Object.keys(nextProps.pageData).length;
     Object.keys(nextProps.pageData).forEach(key =>
       nextProps.pageData[key]().then((post) => {
-        pageData[key] = post;
-        if (len === Object.keys(pageData).length) {
+        if (key === 'index') {
+          descData[key] = post;
+        } else {
+          pageData[key] = post;
+        }
+        if (len === (Object.keys(pageData).length + Object.keys(descData).length)) {
           callback(null, {
             ...nextProps,
-            pageData
+            pageData,
+            descData
           });
         }
       })
@@ -31,6 +40,7 @@ export default class Posts extends React.Component {
       window.location.href = '/notFount';
     }
   }
+
   render() {
     const { post } = this.props.params;
 
@@ -49,6 +59,10 @@ export default class Posts extends React.Component {
 Posts.propTypes = {
   params: React.PropTypes.shape({
     post: React.PropTypes.string
-  })
+  }),
+  pageData: React.PropTypes.oneOfType([
+    React.PropTypes.object,
+    React.PropTypes.undefined
+  ])
 };
 

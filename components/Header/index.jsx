@@ -11,27 +11,31 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <div className="header">
-        <i className="logo" />
-        <div className="container">
-          <div className="brand">
-            <Link className="home" to={config.home}>{config.sitename}</Link>
-            {
-              !config.tagline ? null :
-              <span>- <span className="tagline">{config.tagline}</span></span>
-            }
+      <div>
+        <div className="header">
+          <div className="logo">
+            <Link className="home" to={'/posts/helloworld'} />
           </div>
-          {
-            !config.navigation ? null :
-            <div className="menu" role="navigation">
+          <div className="container">
+            <div className="brand">
               {
-                config.navigation.map((item, index) =>
-                  <Link to={item.link} key={index}>{item.title}</Link>
-                )
+                !config.tagline ? null :
+                <span>- <span className="tagline">{config.tagline}</span></span>
               }
             </div>
-          }
+            {
+              !config.navigation ? null :
+              <div className="menu" role="navigation">
+                {
+                  config.navigation.map((item, index) =>
+                    <Link to={item.link} key={index}>{item.title}</Link>
+                  )
+                }
+              </div>
+            }
+          </div>
         </div>
+        <div className="headerBlank" />
       </div>
     );
   }

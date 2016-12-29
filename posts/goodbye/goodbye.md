@@ -5,7 +5,7 @@ publishDate: 2016-05-05
 
 同时显示组件和代码测试
 
-## Simple Usage
+---
 
 ```jsx
 import AutoComplete from '@ali/cg-react/dist/AutoComplete';
@@ -13,7 +13,7 @@ import Button from '@ali/cg-react/dist/Button';
 
 ReactDOM.render(
   <div>
-    <Button>11</Button>
+    <Button onClick={() => alert('goodbye')}>goodbye</Button>
     <AutoComplete
       url={'http://dip.alibaba-inc.com/api/v2/services/schema/mock/35399'}
       params={{ type: 'employee' }}

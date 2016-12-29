@@ -13,5 +13,5 @@ title: 按钮类型
 
 ```jsx
 import Button from '@ali/cg-react/dist/Button'
-ReactDOM.render(<Button onClick={() => alert(1)}>Click!</Button>, mountNode);
+ReactDOM.render(<Button onClick={() => alert('hello')}>Click!</Button>, mountNode);
 ```

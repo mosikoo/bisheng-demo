@@ -1,5 +1,4 @@
 ---
-title: base
 publishDate: 2015-05-05
 ---
 
