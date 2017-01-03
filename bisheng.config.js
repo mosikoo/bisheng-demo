@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     'bisheng-plugin-description',
     'bisheng-plugin-toc',
+    // './plugins/bisheng-plugin-escape',
     'bisheng-plugin-react?lang=jsx',
     './plugins/bisheng-plugin-copyjsx'
   ],

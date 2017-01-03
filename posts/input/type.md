@@ -23,38 +23,43 @@ ReactDOM.render(
 <div>
   <div className="body">
     <div>
-      <h3 className="title">Input type="text"</h3>
-      <p>必填</p>
-      <Input
-        type="text"
-        required
-        value={'任意格式文本'}
-        maxLength={10}
-        minLength={2}
-      />
-    </div>
-    <div>
-      <h3 className="title">Input type="integer"</h3>
-      <p>必填大于0小于1000</p>
+      <h3 className="title">Input type="integer" readOnly</h3>
+      <p>只读</p>
       <Input
         type="integer"
         required
         maxNumber={1000}
-        minNumber={0}
+        minNumber={100}
+        readOnly
+        value={10000}
       />
     </div>
     <div>
-      <h3 className="title">Input type="money"</h3>
-      <p>输入金额类型，99  value  1000</p>
+      <h3 className="title">Input type="money" readOnly</h3>
+      <p>只读</p>
       <Input
         type="money"
-        unitText={'CNY'}
+        value={10000}
+        readOnly
       />
     </div>
     <div>
-      <h3 className="title">Input type="number"</h3>
-      <p>输入数字或浮点数，至多小数点后两位</p>
-      <Input type="number" onChange={value => debug(value)} />
+      <h3 className="title">Input type="number" readOnly</h3>
+      <p>输入浮点数，至多小数点后两位</p>
+      <Input
+        type="number"
+        value={1000.3344444}
+        readOnly
+      />
+    </div>
+    <div>
+      <h3 className="title">Input type="textarea" readOnly</h3>
+      <p>多行输入控件</p>
+      <Input
+        type="textarea"
+        value="生产环境访问请使用域名gitlab-sc.alibaba-inc.com，由于安全需要生产只能http协议下载代码。用户交流旺旺群: 927514088 暗号: git4alibaba"
+        readOnly
+      />
     </div>
   </div>
   <div className="body">

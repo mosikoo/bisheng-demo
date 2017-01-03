@@ -1,6 +1,4 @@
 ---
-category: Components
-type: General
 title: input
 subtitle: input 控件,
 desc: 'input 控件，支持多种类型'

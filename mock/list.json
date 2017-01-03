@@ -1,8 +1,18 @@
 [
   {
+    "name": "usage",
+    "components": [
+      {"name": "How To Use", "cName": "开始使用", "route": "howtouse"},
+      {"name": "CDN", "cName": "发布至 CDN 的流程", "route": "cdn"},
+      {"name": "International", "cName": "国际化方案", "route": "international"},
+      {"name": "npm link", "cName": "npm-link本地调试", "route": "link"}
+    ]
+  },
+  {
     "name": "base",
     "components": [
-      {"name": "HelloWorld", "cName": "你好", "route": "helloworld"},
+      {"name": "AutoComplete", "cName": "自动完成", "route": "autoComplete"},
+      {"name": "Button", "cName": "按钮", "route": "button"},
       {"name": "Input", "cName": "输入行", "route": "input"}
     ]
   },
