@@ -13,9 +13,7 @@ export default class Header extends React.Component {
     return (
       <div>
         <div className="header">
-          <div className="logo">
-            <Link className="home" to={'/posts/helloworld'} />
-          </div>
+          <a className="logo" href={'/'} />
           <div className="container">
             <div className="brand">
               {

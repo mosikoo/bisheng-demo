@@ -3,7 +3,7 @@ order: 1
 title: 使用介绍
 ---
 
-对接一个后端的服务，搜索并显示建议选项，基于 [uxcore-select2](http://uxco.re/components/select2/)
+对接一个后端的服务，搜索并显示建议选项
 
 ---
 
