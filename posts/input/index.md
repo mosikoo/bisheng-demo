@@ -1,35 +1,41 @@
 ---
 category: Components
 type: General
-title: Button
-subtitle: 按钮,
-desc: '用于一个开始操作'
+title: input
+subtitle: input 控件,
+desc: 'input 控件，支持多种类型'
 ---
 
 ## 何时使用
 
-标记了一个（或封装一组）操作命令，响应用户点击行为，触发相应的业务逻辑。
+input 控件，支持多种文本输入框类型类型
 
 ---
 
 
 ## API
 
-通过设置 Button 的属性来产生不同的按钮样式，推荐顺序为：`type` -> `shape` -> `size` -> `loading` -> `disabled`
+Input的属性说明如下：
 
-按钮的属性说明如下：
+名称 | 类型 | 描述 | 默认
+--- | --- | --- | ---
+type | `'string'` | `'text'`, `'password'`, `'money'`, `'number'`, `'email'`, `'textarea'`, `'email'` | `'text'`
+required | `boolean` | 必填项 | `false`
+readOnly | `boolean` | 只读 | `false`
+style | `object` | 样式 | `{}`
+onChange | `function` | 实时改变回调 | `(value) => {}`
+onBlur | `function` | 失去焦点回调 | `(value) => {}`
+fieldName | `string` | 文案提示前缀，比如 『`该项`不可为空』| `该项`
+value | `number` or `string` | 被内部控制的值 | `''`
+readOnlyMaxLength | `number` | 只读模式下字符的最多显示位数 | `15`
+maxNumber | `number` | 最大的数值 | `null`
+minNumber | `number` | 最小的数值 | `null`
+maxLength | `number` | 字符串最大长度 | `null`
+minLength | `number` | 字符串最小长度 | `null`
+className | `string` | 自定义类名 | `null`
+placeholder | `string` | placehoder | `请输入` or `Please Input`
+unitText | `string` | 单位标识字符串 | `''`
 
-属性 | 说明 | 类型 | 默认值
------|-----|-----|------
-type | 设置按钮类型，可选值为 `primary` `ghost` `dashed` 或者不设 | string | -
-htmlType | 设置 `button` 原生的 `type` 值，可选值请参考 [HTML 标准](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) | string | `button`
-icon | 设置按钮的图标类型 | string | -
-shape | 设置按钮形状，可选值为 `circle` 或者不设 | string | -
-size | 设置按钮大小，可选值为 `small` `large` 或者不设 | string | `default`
-loading | 设置按钮载入状态 | boolean | false
-onClick | `click` 事件的 handler | function | -
-
-`<Button>Hello world!</Button>` 最终会被渲染为 `<button>Hello world!</button>`，并且除了上表中的属性，其它属性都会直接传到 `<button></button>`。
 
 <style>
 [id^="components-button-demo-"] .ant-btn {

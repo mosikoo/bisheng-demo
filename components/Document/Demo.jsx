@@ -28,7 +28,7 @@ export default class Demo extends React.Component {
     return (
       <div className="code-boxes">
         <section className="code-box">
-          <section className="show-Component">
+          <section className="demo-group">
             {utils.toReactComponent(content)}
           </section>
           {

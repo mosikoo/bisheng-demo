@@ -3,6 +3,7 @@ import Demo from './Demo';
 
 require('./syntax.css');
 require('./index.less');
+require('./component.less');
 
 export default class Document extends React.Component {
   constructor(props) {
