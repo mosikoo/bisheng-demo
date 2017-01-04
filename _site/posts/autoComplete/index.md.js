@@ -1,6 +1,6 @@
-webpackJsonp([11,12],{
+webpackJsonp([17,18],{
 
-/***/ 490:
+/***/ 626:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9,7 +9,7 @@ webpackJsonp([11,12],{
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactDom = __webpack_require__(3);
+	var _reactDom = __webpack_require__(2);
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -20,7 +20,7 @@ webpackJsonp([11,12],{
 	  "meta": {
 	    "title": "AutoComplete",
 	    "subtitle": "自动完成,",
-	    "desc": "对接一个后端的服务，搜索并显示建议选项，基于 [uxcore-select2](http://uxco.re/components/select2/)",
+	    "desc": "对接一个后端的服务，搜索并显示建议选项",
 	    "filename": "posts/autoComplete/index.md"
 	  },
 	  "description": ["section", ["h2", "usage"], ["p", "对接一个后端的服务，搜索并显示建议选项，基于 ", ["a", {

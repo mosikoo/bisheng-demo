@@ -13,6 +13,8 @@
     "components": [
       {"name": "AutoComplete", "cName": "自动完成", "route": "autoComplete"},
       {"name": "Button", "cName": "按钮", "route": "button"},
+      {"name": "Calendar", "cName": "日期选择", "route": "calendar"},
+      {"name": "Dialog", "cName": "对话框", "route": "dialog"},
       {"name": "Input", "cName": "输入行", "route": "input"}
     ]
   },

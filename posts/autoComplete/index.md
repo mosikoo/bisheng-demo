@@ -1,7 +1,7 @@
 ---
 title: AutoComplete
 subtitle: 自动完成,
-desc: 对接一个后端的服务，搜索并显示建议选项，基于 [uxcore-select2](http://uxco.re/components/select2/)
+desc: 对接一个后端的服务，搜索并显示建议选项
 ---
 
 ## usage

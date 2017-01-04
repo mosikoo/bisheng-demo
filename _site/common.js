@@ -30,7 +30,7 @@
 /******/ 	// "0" means "already loaded"
 /******/ 	// Array means "loading", array contains callbacks
 /******/ 	var installedChunks = {
-/******/ 		12:0
+/******/ 		18:0
 /******/ 	};
 
 /******/ 	// The require function
@@ -76,7 +76,7 @@
 /******/ 			script.charset = 'utf-8';
 /******/ 			script.async = true;
 
-/******/ 			script.src = __webpack_require__.p + "" + ({"0":"posts/goodbye/goodbye.md","1":"posts/autoComplete/autocomplete.md","2":"posts/input/type.md","3":"posts/input/edit.md","4":"posts/link/index.md","5":"posts/international/index.md","6":"posts/input/index.md","7":"posts/howtouse/index.md","8":"posts/goodbye/index.md","9":"posts/cdn/index.md","10":"posts/button/index.md","11":"posts/autoComplete/index.md","13":"index"}[chunkId]||chunkId) + ".js";
+/******/ 			script.src = __webpack_require__.p + "" + ({"0":"posts/form/base.md","1":"posts/goodbye/goodbye.md","2":"posts/autoComplete/autocomplete.md","3":"posts/calendar/base.md","4":"posts/input/type.md","5":"posts/input/edit.md","6":"posts/dialog/base.md","7":"posts/link/index.md","8":"posts/international/index.md","9":"posts/input/index.md","10":"posts/howtouse/index.md","11":"posts/goodbye/index.md","12":"posts/form/index.md","13":"posts/dialog/index.md","14":"posts/cdn/index.md","15":"posts/calendar/index.md","16":"posts/button/index.md","17":"posts/autoComplete/index.md","19":"index"}[chunkId]||chunkId) + ".js";
 /******/ 			head.appendChild(script);
 /******/ 		}
 /******/ 	};
