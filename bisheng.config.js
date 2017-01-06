@@ -1,6 +1,9 @@
 const path = require('path');
 
 module.exports = {
+  source: './posts',
+  output: './dist',
+  theme: './src/_theme',
   lazyLoad: true,
   // root: '/bisheng-theme-one/',
   plugins: [
@@ -8,9 +11,9 @@ module.exports = {
     'bisheng-plugin-toc',
     // './plugins/bisheng-plugin-escape',
     'bisheng-plugin-react?lang=jsx',
-    './plugins/bisheng-plugin-copyjsx'
+    './src/plugins/bisheng-plugin-copyjsx'
   ],
-  htmlTemplate: path.join(__dirname, './index.html'),
+  htmlTemplate: path.join(__dirname, './src/index.html'),
   webpackConfig(config) {
     config.resolve.alias = {
       react: path.join(__dirname, 'node_modules', 'react'),

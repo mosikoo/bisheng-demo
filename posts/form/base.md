@@ -8,7 +8,13 @@ title: 使用介绍
 ---
 
 ```jsx
-import Form from '@ali/cg-react/dist/Form';
+import Form from '@ali/cg-react/dist/Form2';
+import Fetch from '@ali/cg-react/dist/Fetch';
+
+Fetch.set({
+  querySyncSelect1: 'http://dip.alibaba-inc.com/api/v2/services/schema/mock/35611?select=1',
+  querySyncSelect2: 'http://dip.alibaba-inc.com/api/v2/services/schema/mock/35611?select=1'
+});
 
 const simpleConfig = {
   title: '内置组件',
@@ -128,7 +134,6 @@ ReactDOM.render(
   <h1 className="title">Form</h1>
   <div className="body">
     <Form
-      ref={c => this.form1 = c}
       defaultData={firstFormData}
       config={simpleConfig}
       onSubmit={formData => console.log(formData)}

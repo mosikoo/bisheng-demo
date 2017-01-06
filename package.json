@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=develop bisheng start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf ./_site/ && bisheng build"
+    "build": "rm -rf ./dist/ && bisheng build"
   },
   "keywords": [
     "cg-react"
