@@ -33,14 +33,3 @@ minLength | `number` | 字符串最小长度 | `null`
 className | `string` | 自定义类名 | `null`
 placeholder | `string` | placehoder | `请输入` or `Please Input`
 unitText | `string` | 单位标识字符串 | `''`
-
-
-<style>
-[id^="components-button-demo-"] .ant-btn {
-  margin-right: 8px;
-  margin-bottom: 12px;
-}
-[id^="components-button-demo-"] .ant-btn-group > .ant-btn {
-  margin-right: 0;
-}
-</style>

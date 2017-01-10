@@ -99,7 +99,7 @@ li {
   margin: 0px;
 }
 .aside {
-  width: 200px;
+  min-width: 200px;
   background-color: #f5f5f5;
 }
 .aside .category-name {
@@ -531,7 +531,10 @@ i.collapse:hover {
   margin: 5px 0;
   color: #e68300;
 }
+html,
 body {
+  padding: 0;
+  margin: 0;
   color: #666;
   font-size: 14px;
 }

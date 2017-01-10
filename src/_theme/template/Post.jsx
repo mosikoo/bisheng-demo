@@ -8,7 +8,6 @@ import { isObject } from '../../components/utils';
 require('../static/base.less');
 
 export function collect(nextProps, callback) {
-  console.log(nextProps)
   if (isObject(nextProps.pageData)) {
     const pageData = {};
     const descData = {};
@@ -38,7 +37,7 @@ export function collect(nextProps, callback) {
 export default class Posts extends React.Component {
   componentWillMount() {
     if (this.props.pageData === undefined) {
-      // window.location.href = '/notFount';
+      window.location.href = '/notFount';
     }
   }
 
