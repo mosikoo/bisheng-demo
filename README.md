@@ -102,9 +102,9 @@ index.html指向`dist/index.html`
 
 如果只是单单添加markdown，那么只要修改两处便可完成
 
-***以Input为例子***
+**以Input为例子**
 
-####1.修改src/mock/list.json文件来添加列表项，即页面左侧一列导航
+#### 1.修改src/mock/list.json文件来添加列表项，即页面左侧一列导航
 
 在所属模块下的components字段中添加一配置对象， 具体看[list.json文件](http://gitlab.alibaba-inc.com/cgfe/cg-react-docs/blob/master/src/mock/list.json)
 
@@ -113,8 +113,8 @@ index.html指向`dist/index.html`
 //name与cName对应中英名， route为对应路由，所以input的路由是/posts/input
 ```
 
-####2.添加markdown文件
-还是以Input为例子
+#### 2.添加markdown文件
+**还是以Input为例子**
 
 首先在posts下创建input文件夹(**必须小写，名字与list.json中的route字段对应，这里为input**)
 
@@ -130,7 +130,7 @@ input ----------------------------- 与路由同名
 
 主要分为两种index.md(**文件名必须为index.md，且必须配置**)与其他xxx.md（名字随意取，可不配置）
 
-#####index.md
+##### index.md
 
 > 主要描述一个组件的标题， 介绍， API
 
@@ -175,7 +175,7 @@ unitText | `string` | 单位标识字符串 | `''`
 
 ```
 
-#####其他md文档
+##### 其他md文档
 
 形式如下
 
