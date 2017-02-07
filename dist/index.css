@@ -85,7 +85,7 @@
   display: inline-block;
   width: 160px;
   height: 40px;
-  background: url(/14f2a52352e0485b45104d138ce52cdf.png) no-repeat;
+  background: url(/cgfe/cg-react-docs/dist/14f2a52352e0485b45104d138ce52cdf.png) no-repeat;
   background-size: 160px 40px;
   margin-left: 10px;
   margin-top: 5px;
@@ -281,7 +281,7 @@ li {
   text-decoration: none;
 }
 .archive .bg {
-  background: url(/4eb784ea1f0eb2206b22b4413cf84cc5.jpg) center center no-repeat;
+  background: url(/cgfe/cg-react-docs/dist/4eb784ea1f0eb2206b22b4413cf84cc5.jpg) center center no-repeat;
   width: 100%;
   height: 100%;
   position: fixed;

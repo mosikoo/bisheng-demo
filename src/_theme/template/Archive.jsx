@@ -1,11 +1,13 @@
 import React from 'react';
 import classnames from 'classnames';
+import config from '../';
 
 require('../static/archive.less');
 
+const { rootPath } = config;
 const navConfig = [
-  { name: 'COMPONENTS', href: '/posts/input' },
-  { name: 'ABOUT US', href: '/posts/input' }
+  { name: 'COMPONENTS', href: `${rootPath}posts/input` },
+  { name: 'ABOUT US', href: `${rootPath}posts/input` }
 ];
 
 export default class Archive extends React.Component {
@@ -40,7 +42,7 @@ export default class Archive extends React.Component {
         <h1>CGREACT COMPONENTS</h1>
         <div className="line" />
         <p>Use the CG-REACT component library to complete business codes more efficiently</p>
-        <a className="toHome" href="/posts/input">go to cg-react</a>
+        <a className="toHome" href={`${rootPath}posts/input`}>go to cg-react</a>
       </div>
     );
   }

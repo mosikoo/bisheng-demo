@@ -1,13 +1,21 @@
 import React from 'react';
+import exist from 'exist.js';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Body from '../../components/Body';
 import Document from '../../components/Document';
 import { isObject } from '../../components/utils';
+import config from '../';
 
 require('../static/base.less');
 
+const { rootPath } = config;
+
 export function collect(nextProps, callback) {
+  // pathroot的不为'/'， pageData需要重新配置
+  if (rootPath !== '/') {
+    nextProps.pageData = exist.get(nextProps.data, ['posts', nextProps.params.post]);
+  }
   if (isObject(nextProps.pageData)) {
     const pageData = {};
     const descData = {};
@@ -37,7 +45,7 @@ export function collect(nextProps, callback) {
 export default class Posts extends React.Component {
   componentWillMount() {
     if (this.props.pageData === undefined) {
-      window.location.href = '/notFount';
+      // window.location.href = '/notFount';
     }
   }
 

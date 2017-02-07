@@ -1,6 +1,8 @@
 const path = require('path');
+const rootPath = require('./src/_theme').rootPath || '/';
 
 module.exports = {
+  root: rootPath,
   source: './posts',
   output: './dist',
   theme: './src/_theme',
