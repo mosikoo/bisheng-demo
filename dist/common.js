@@ -88,7 +88,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/cgfe/cg-react-docs/dist/";
+/******/ 	__webpack_require__.p = "/bisheng-demo/dist/";
 /******/ })
 /************************************************************************/
 /******/ ([]);

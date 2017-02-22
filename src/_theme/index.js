@@ -1,13 +1,13 @@
-// const rootPath = '/cgfe/cg-react-docs/dist/';
-const rootPath = '/';
+const rootPath = '/bisheng-demo/dist/';
+// const rootPath = '/';
 
 module.exports = {
   rootPath,
   routes: [{
-    path: rootPath,
+    path: '/',
     component: './template/Archive'
   }, {
-    path: `${rootPath}posts/:post`,
+    path: '/posts/:post',
     component: './template/Post'
   }]
 };
