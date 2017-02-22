@@ -1,10 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router';
 import lists from '../../mock/list.json';
-import config from '../../_theme';
 
 require('./style.less');
-
-const { rootPath } = config;
 
 export default class Aside extends React.Component {
   render() {
@@ -18,7 +16,7 @@ export default class Aside extends React.Component {
               {
                 list.components.map((component, idx) =>
                   <li key={`${component.name}${idx}`} className={route === component.route ? 'active' : ''}>
-                    <a href={`${rootPath}posts/${component.route}`}>{component.name}<small>{component.cName}</small></a>
+                    <Link to={`/posts/${component.route}`}>{component.name}<small>{component.cName}</small></Link>
                   </li>
                 )
               }
