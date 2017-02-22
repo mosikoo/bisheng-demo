@@ -22238,6 +22238,8 @@ webpackJsonp([19,18],[
 
 	var rootPath = _theme2.default.rootPath;
 
+	console.log(rootPath, rootPath + 'posts/', 'rootPath');
+
 	var Aside = function (_React$Component) {
 	  _inherits(Aside, _React$Component);
 

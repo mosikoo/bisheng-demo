@@ -6,6 +6,7 @@ import config from '../../_theme';
 require('./style.less');
 
 const { rootPath } = config;
+console.log(rootPath, `${rootPath}posts/`, 'rootPath');
 
 export default class Aside extends React.Component {
   render() {
