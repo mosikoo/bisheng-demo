@@ -1,5 +1,5 @@
-const rootPath = '/bisheng-demo/dist/';
-// const rootPath = '/';
+// const rootPath = '/cgfe/cg-react-docs/dist/';
+const rootPath = '/';
 
 module.exports = {
   rootPath,
